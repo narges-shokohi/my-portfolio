@@ -35,7 +35,7 @@ header {
 .logo {
   font-weight: 700;
   font-size: 1.6rem;
-  color: #0af;
+  color: #e88ae3;
   cursor: default;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #0af;
+  color: #e88ae3;
 }
 
 /* بخش‌ها */
@@ -74,7 +74,7 @@ header {
 .profile-pic-container img {
   border-radius: 12px;
   max-width: 280px;
-  box-shadow: 0 0 15px rgba(10, 170, 255, 0.6);
+  box-shadow: 0 0 15px #e88ae3;
 }
 
 .about-text h1 {
@@ -83,7 +83,7 @@ header {
 }
 
 .about-text h3 {
-  color: #0af;
+  color: #e88ae3;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -118,7 +118,7 @@ header {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(10,170,255,0.3);
+  box-shadow: 0 0 10px #e88ae361;
 }
 
 .slide img {
