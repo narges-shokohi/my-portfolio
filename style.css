@@ -1,0 +1,92 @@
+/* فایل CSS برای رزومه شخصی */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: linear-gradient(135deg, #0099ff, #66ccff);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #007acc;
+  border-right: 5px solid #007acc;
+  padding-right: 0.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #e0f0ff;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #007acc;
+  color: white;
+  border-top: 3px solid #005f99;
+}
