@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>رزومه نرگس شکوهی‌دوست</title>
+  <title>رزومه حرفه‌ای نرگس شکوهی‌دوست</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- آیکون‌ها -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <h1>نرگس شکوهی‌دوست</h1>
-    <p>طراح UI/UX | برنامه‌نویس موبایل و وب | متخصص سئو</p>
+    <nav class="navbar">
+      <div class="logo">N.S</div>
+      <ul class="nav-links">
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#skills">مهارت‌ها</a></li>
+        <li><a href="#projects">نمونه‌کارها</a></li>
+        <li><a href="#contact">تماس</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="about-me">
-    <h2>درباره من</h2>
-    <p>
-      من یک طراح و برنامه‌نویس هستم با تخصص در طراحی پوستر، UI، توسعه موبایل و وب، و سئو. علاقه‌مند به خلق پروژه‌های خلاقانه و کاربرپسند.
-    </p>
+  <section id="about" class="section about">
+    <div class="profile-pic-container">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Profile Picture" />
+    </div>
+    <div class="about-text">
+      <h1>نرگس شکوهی‌دوست</h1>
+      <h3>طراح UI/UX و توسعه‌دهنده فرانت‌اند</h3>
+      <p>علاقه‌مند به خلق تجربه‌های تعاملی و زیبا در وب و موبایل با طراحی مدرن و کدنویسی تمیز.</p>
+    </div>
   </section>
 
-  <section class="skills">
+  <section id="skills" class="section skills">
     <h2>مهارت‌ها</h2>
     <ul>
       <li>طراحی UI/UX</li>
@@ -30,14 +46,38 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="projects" class="section projects">
+    <h2>نمونه‌کارها</h2>
+    <div class="slider">
+      <button class="prev">&lt;</button>
+      <div class="slides">
+        <div class="slide">
+          <img src="https://via.placeholder.com/300x200?text=پروژه+1" alt="Project 1" />
+          <p>پروژه اول: طراحی اپلیکیشن موبایل</p>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/300x200?text=پروژه+2" alt="Project 2" />
+          <p>پروژه دوم: طراحی سایت فروشگاهی</p>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/300x200?text=پروژه+3" alt="Project 3" />
+          <p>پروژه سوم: کمپین تبلیغاتی و ویدیو</p>
+        </div>
+      </div>
+      <button class="next">&gt;</button>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
     <h2>تماس با من</h2>
-    <p>ایمیل: fake.email@example.com</p>
-    <p>شماره تماس: 0912-000-0000</p>
+    <p><i class="fas fa-envelope"></i> fake.email@example.com</p>
+    <p><i class="fas fa-phone"></i> 0912-000-0000</p>
   </section>
 
   <footer>
     <p>© 2025 نرگس شکوهی‌دوست</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
