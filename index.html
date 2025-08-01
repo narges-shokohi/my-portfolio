@@ -1,150 +1,65 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>رزومه نرگس شکوهی‌دوست</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.7;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-
-    header {
-      background: #1e88e5;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #1565c0;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 2px solid #1e88e5;
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .skills, .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #1e88e5;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزومه من</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-  <h1>نرگس شکوهی‌دوست</h1>
-  <p>طراح گرافیک | طراح UI/UX | توسعه‌دهنده موبایل و وب | متخصص سئو</p>
-</header>
-
-<nav>
-  <a href="#about">درباره من</a>
-  <a href="#skills">مهارت‌ها</a>
-  <a href="#portfolio">نمونه‌کارها</a>
-  <a href="#contact">تماس</a>
-</nav>
-
-<section id="about">
-  <h2>درباره من</h2>
-  <p>من نرگس هستم، دیزاینر و برنامه‌نویس با تخصص در زمینه طراحی گرافیک، رابط کاربری، توسعه اپلیکیشن با فلاتر، طراحی سایت با وردپرس و سئو. عاشق خلق تجربه‌های بصری زیبا و کاربردی‌ام.</p>
-</section>
-
-<section id="skills">
-  <h2>مهارت‌ها</h2>
-  <div class="skills">
-    <div class="card">🎨 طراحی گرافیک (Photoshop، Illustrator)</div>
-    <div class="card">🖌 طراحی UI/UX (Figma، Adobe XD)</div>
-    <div class="card">📱 فلاتر (Flutter)</div>
-    <div class="card">💻 فرانت‌اند (HTML، CSS، JS)</div>
-    <div class="card">🌐 وردپرس و المنتور</div>
-    <div class="card">🔍 سئو و بهینه‌سازی</div>
-    <div class="card">🎬 تدوین ویدیو (Premiere، After Effects)</div>
-  </div>
-</section>
-
-<section id="portfolio">
-  <h2>نمونه‌کارها</h2>
-  <div class="portfolio">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Poster+Design" alt="نمونه پوستر"/>
-      <p>نمونه طراحی پوستر تبلیغاتی</p>
+  <header>
+    <div class="container">
+      <h1>نرگس شکوهی دوست</h1>
+      <p>طراح و توسعه‌دهنده چندمهارته</p>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=UI+App" alt="نمونه UI"/>
-      <p>رابط کاربری اپلیکیشن سفارش غذا</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Website" alt="نمونه سایت"/>
-      <p>طراحی سایت فروشگاهی با وردپرس</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Flutter+App" alt="اپلیکیشن فلاتر"/>
-      <p>اپلیکیشن فروشگاهی Flutter</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section id="contact">
-  <h2>تماس با من</h2>
-  <p>ایمیل: yourmail@example.com</p>
-  <p>شماره تماس: ۰۹۱۲xxxxxxx</p>
-  <p>شبکه‌های اجتماعی: گیت‌هاب، لینکدین، اینستاگرام کاری</p>
-</section>
+  <section class="about">
+    <div class="container">
+      <h2>درباره من</h2>
+      <p>طراح گرافیک، طراح UI/UX، برنامه‌نویس موبایل و وب، طراح سایت با وردپرس، متخصص سئو و تدوینگر ویدیو.</p>
+    </div>
+  </section>
 
-<footer>
-  © 2025 طراحی و توسعه توسط نرگس شکوهی‌دوست
-</footer>
+  <section class="skills">
+    <div class="container">
+      <h2>مهارت‌ها</h2>
+      <ul>
+        <li>طراحی گرافیک (Photoshop, Illustrator, Canva)</li>
+        <li>طراحی رابط کاربری (Figma, XD)</li>
+        <li>برنامه‌نویسی موبایل (Flutter)</li>
+        <li>برنامه‌نویسی وب (HTML, CSS, JS)</li>
+        <li>وردپرس و سئو</li>
+        <li>تدوین ویدیو (Premiere, After Effects)</li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="portfolio">
+    <div class="container">
+      <h2>نمونه‌کارها</h2>
+      <div class="grid">
+        <div class="card">پوسترها</div>
+        <div class="card">UI اپلیکیشن‌ها</div>
+        <div class="card">طراحی سایت</div>
+        <div class="card">ویدیوهای تبلیغاتی</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>تماس با من</h2>
+      <p>ایمیل: yourname@example.com</p>
+      <p>اینستاگرام: @yourinstagram</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
 </body>
 </html>
