@@ -1,101 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رزومه نرگس شکوهی‌دوست</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about">درباره من</a></li>
-        <li><a href="#skills">مهارت‌ها</a></li>
-        <li><a href="#portfolio">نمونه‌کارها</a></li>
-        <li><a href="#experience">سوابق</a></li>
-        <li><a href="#education">تحصیلات</a></li>
-        <li><a href="#contact">تماس با من</a></li>
-      </ul>
+  <header>
+    <img src="logo.png" alt="لوگو">
+    <nav>
+      <a href="#hero">خانه</a>
+      <a href="#about">درباره من</a>
+      <a href="#portfolio">نمونه‌کارها</a>
+      <a href="#contact">تماس</a>
     </nav>
   </header>
 
+  <section id="hero" class="section hero">
+    <img src="me.jpg" alt="نرگس شکوهی‌دوست">
+    <h1>نرگس شکوهی‌دوست</h1>
+    <p>طراح رابط کاربری و توسعه‌دهنده فرانت‌اند</p>
+  </section>
+
   <section id="about" class="section">
-    <div class="about-container">
-      <img src="https://via.placeholder.com/200" alt="عکس نرگس" class="profile-img">
-      <div class="about-text">
-        <h1>نرگس شکوهی‌دوست</h1>
-        <p>طراح رابط کاربری، توسعه‌دهنده فرانت‌اند و گرافیست حرفه‌ای با سابقه همکاری در پروژه‌های بین‌المللی.</p>
-      </div>
-    </div>
+    <h2>درباره من</h2>
+    <p>
+      من یک طراح رابط کاربری و توسعه‌دهنده با تجربه هستم که تمرکز اصلی‌ام بر ایجاد تجربه‌های کاربری زیبا، روان و مینیمال است.
+    </p>
   </section>
-
-  <div class="divider"></div>
-
-  <section id="skills" class="section center-text">
-    <h2>مهارت‌ها</h2>
-    <ul class="skills-list">
-      <li><i class="fa-solid fa-code"></i> HTML, CSS, JS, Flutter</li>
-      <li><i class="fa-solid fa-paintbrush"></i> Photoshop, Illustrator, Figma, Canva</li>
-      <li><i class="fa-solid fa-computer"></i> ICDL و مهارت‌های شرکتی</li>
-    </ul>
-  </section>
-
-  <div class="divider"></div>
 
   <section id="portfolio" class="section">
     <h2>نمونه‌کارها</h2>
-    <div class="portfolio-category">
-      <h3>طراحی گرافیک</h3>
-      <ul>
-        <li>نمونه لوگو - <img src="https://via.placeholder.com/150" alt="لوگو"></li>
-        <li>نمونه بنر - <img src="https://via.placeholder.com/150" alt="بنر"></li>
-      </ul>
-    </div>
-    <div class="portfolio-category">
-      <h3>طراحی سایت</h3>
-      <div class="site-preview">
-        <img src="https://via.placeholder.com/250x150" alt="پیش‌نمایش سایت">
-        <a href="#" target="_blank">مشاهده سایت</a>
-      </div>
+    <div class="portfolio">
+      <div class="portfolio-item">پروژه ۱</div>
+      <div class="portfolio-item">پروژه ۲</div>
+      <div class="portfolio-item">پروژه ۳</div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <section id="experience" class="section center-text">
-    <h2>سوابق شغلی</h2>
-    <ul>
-      <li>طراح رابط کاربری در شرکت X - ۱۴۰۲ تا ۱۴۰۳</li>
-      <li>گرافیست در استودیو طراحی Y - ۱۴۰۱ تا ۱۴۰۲</li>
-      <li><strong>در حال حاضر مشغول به فعالیت فریلنسری</strong></li>
-    </ul>
-  </section>
-
-  <div class="divider"></div>
-
-  <section id="education" class="section center-text">
-    <h2>تحصیلات</h2>
-    <p>کارشناسی نرم‌افزار، دانشگاه آزاد اسلامی</p>
-    <p>در حال یادگیری: React, UI Motion Design, Next.js</p>
-  </section>
-
-  <div class="divider"></div>
-
-  <section id="contact" class="section center-text">
+  <section id="contact" class="section">
     <h2>تماس با من</h2>
-    <p>ایمیل: example@email.com</p>
-    <p>تلفن: ۰۹۱۲۱۲۳۴۵۶۷</p>
-    <p>دانلود رزومه PDF: <a href="#">دانلود فایل</a></p>
-    <div class="social-icons">
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-github"></i>
-    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="نام شما">
+      <input type="email" placeholder="ایمیل شما">
+      <textarea rows="5" placeholder="پیام شما"></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
   </section>
 
-  <script src="script.js"></script>
+  <footer>
+    © 2025 نرگس شکوهی‌دوست - تمام حقوق محفوظ است.
+  </footer>
 </body>
 </html>
