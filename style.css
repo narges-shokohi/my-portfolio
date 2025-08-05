@@ -1,223 +1,232 @@
-/* Reset و تنظیمات پایه */
+/* =============== Reset & Base =============== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Vazirmatn', sans-serif;
-  direction: rtl;
+  font-family: 'IRANSans', sans-serif;
 }
-
 body {
-  background-color: #121212;
-  color: #eee;
-  line-height: 1.6;
-  min-height: 100vh;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+section {
+  padding: 60px 20px;
+  position: relative;
 }
 
-/* منو */
+/* =============== Header & Menu =============== */
 header {
-  background-color: #1f1f1f;
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-
-.navbar {
-  max-width: 1100px;
-  margin: 0 auto;
+nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 20px;
 }
-
-.logo {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #e88ae3;
-  cursor: default;
-}
-
-.nav-links {
-  list-style: none;
+nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #0077ff;
 }
 
-.nav-links li a {
-  color: #eee;
-  text-decoration: none;
+/* =============== درباره من =============== */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-image {
+  flex: 1;
+  min-width: 250px;
+}
+.about-image img {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* =============== جداکننده‌ها =============== */
+section::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0077ff, #00c2ff);
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+/* =============== انیمیشن‌ها =============== */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+section {
+  animation: fadeUp 1s ease forwards;
+}
+
+/* =============== مهارت‌ها =============== */
+.skills {
+  text-align: center;
+}
+.skills .item {
+  display: inline-block;
+  background: #eaf4ff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
   font-weight: 500;
+}
+
+/* =============== نمونه‌کارها (اسلایدشو) =============== */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+}
+.slider img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* =============== دسته‌بندی نمونه‌کار طراحی =============== */
+.portfolio-category {
+  margin-bottom: 30px;
+}
+.portfolio-category h3 {
+  margin-bottom: 10px;
+  color: #0077ff;
+}
+
+/* =============== سوابق شغلی =============== */
+.experience {
+  border-left: 3px solid #0077ff;
+  padding-left: 20px;
+}
+.experience-item {
+  margin-bottom: 20px;
+}
+.experience-item::before {
+  content: "🧩";
+  margin-right: 10px;
+}
+
+/* =============== نمونه‌کار سایت =============== */
+.site-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.site-preview .card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+.site-preview .card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.site-preview img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* =============== تحصیلات و برنامه‌های در حال یادگیری =============== */
+.education,
+.learning {
+  text-align: center;
+}
+.education p,
+.learning p {
+  margin: 10px auto;
+}
+
+/* =============== رزومه PDF =============== */
+.resume-download {
+  text-align: center;
+  margin-top: 30px;
+}
+.resume-download a {
+  background: #0077ff;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.resume-download a:hover {
+  background: #005ecb;
+}
+
+/* =============== راه‌های ارتباطی =============== */
+.contact {
+  text-align: center;
+}
+.contact p {
+  margin-bottom: 10px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+}
+.social-icons a {
+  color: #555;
   transition: color 0.3s;
 }
-
-.nav-links li a:hover {
-  color: #e88ae3;
+.social-icons a:hover {
+  color: #0077ff;
 }
 
-/* بخش‌ها */
-.section {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-/* درباره من */
-.about {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-
-.profile-pic-container img {
-  border-radius: 12px;
-  max-width: 280px;
-  box-shadow: 0 0 15px #e88ae3;
-}
-
-.about-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.3rem;
-}
-
-.about-text h3 {
-  color: #e88ae3;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  max-width: 600px;
-}
-
-/* مهارت‌ها */
-.skills h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #e88ae3;
-  text-align: center;
-}
-
-/* تک مهارت و نمونه‌کارها */
-.skill {
-  margin-bottom: 3rem;
-}
-
-.skill h3 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: #f0a1f7;
-}
-
-.skill p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-/* کارت نمونه‌کار */
-.projects {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
-.project-card {
-  background-color: #222;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #e88ae350;
-  padding: 0.5rem;
-  width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 0.7rem;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.project-card p {
-  color: #eee;
-  font-size: 1rem;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px #e88ae3;
-}
-
-/* تماس */
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #e88ae3;
-  text-align: center;
-}
-
-.contact p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  color: #ddd;
-}
-
-.contact i {
-  color: #e88ae3;
-}
-
-/* فوتر */
-footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  color: #555;
-  border-top: 1px solid #222;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-}
-
-/* ریسپانسیو */
+/* =============== ریسپانسیو =============== */
 @media (max-width: 768px) {
-  .about {
+  .about-container {
     flex-direction: column;
   }
-
-  .profile-pic-container img {
-    max-width: 80%;
-    margin-bottom: 1.5rem;
-  }
-
-  .projects {
-    justify-content: center;
-  }
-
-  .project-card {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  .nav-links {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .about-text h1 {
-    font-size: 2rem;
-  }
-  .skill h3 {
-    font-size: 1.3rem;
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
   }
 }

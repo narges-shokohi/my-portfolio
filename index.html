@@ -2,113 +2,120 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>رزومه حرفه‌ای نرگس شکوهی‌دوست</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رزومه من</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- منو -->
   <header>
-    <nav class="navbar">
-      <div class="logo">N.S</div>
-      <ul class="nav-links">
+    <nav>
+      <div class="logo">رزومه من</div>
+      <ul>
         <li><a href="#about">درباره من</a></li>
         <li><a href="#skills">مهارت‌ها</a></li>
-        <li><a href="#projects">نمونه‌کارها</a></li>
-        <li><a href="#contact">تماس</a></li>
+        <li><a href="#portfolio">نمونه‌کارها</a></li>
+        <li><a href="#experience">سوابق</a></li>
+        <li><a href="#contact">ارتباط</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about" class="section about">
-    <div class="profile-pic-container">
-      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Profile Picture" />
-    </div>
-    <div class="about-text">
-      <h1>نرگس شکوهی‌دوست</h1>
-      <h3>طراح UI/UX و توسعه‌دهنده فرانت‌اند</h3>
-      <p>من نرگس شکوهی‌دوست هستم، متخصص در طراحی رابط کاربری و توسعه وب با تمرکز بر تجربه کاربری و کدنویسی تمیز. عاشق خلق محصولات دیجیتال مدرن هستم و در مسیر یادگیری تکنولوژی‌های نوین حرکت می‌کنم.</p>
+  <!-- درباره من -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>درباره من</h2>
+        <p>من یک طراح و توسعه‌دهنده فرانت‌اند هستم با علاقه به ساخت رابط‌های کاربری زیبا، واکنش‌گرا و تجربه کاربری حرفه‌ای.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/avatar.jpg" alt="تصویر من" />
+      </div>
     </div>
   </section>
 
-  <section id="skills" class="section skills">
-    <h2>مهارت‌ها و نمونه‌کارها</h2>
+  <!-- مهارت‌ها -->
+  <section id="skills" class="skills">
+    <h2>مهارت‌ها</h2>
+    <div class="item">HTML</div>
+    <div class="item">CSS</div>
+    <div class="item">JavaScript</div>
+    <div class="item">React</div>
+    <div class="item">Figma</div>
+    <div class="item">Git</div>
+  </section>
 
-    <div class="skill">
-      <h3>طراحی UI/UX</h3>
-      <p>تسلط به طراحی رابط کاربری با Figma، Adobe XD، Photoshop و طراحی تعاملی</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/images/ui-app.jpg" alt="UI App">
-          <p>طراحی رابط کاربری اپلیکیشن فروشگاهی</p>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/ui-portfolio.jpg" alt="UI Portfolio">
-          <p>طراحی وب‌سایت رزومه شخصی</p>
-        </div>
+  <!-- نمونه‌کارها -->
+  <section id="portfolio" class="skills">
+    <h2>نمونه‌کارها</h2>
+
+    <div class="portfolio-category">
+      <h3>طراحی رابط کاربری</h3>
+      <div class="slider">
+        <img src="images/ui1.jpg" alt="UI Design 1">
+        <img src="images/ui2.jpg" alt="UI Design 2">
+        <img src="images/ui3.jpg" alt="UI Design 3">
       </div>
     </div>
 
-    <div class="skill">
-      <h3>فرانت‌اند وب</h3>
-      <p>HTML، CSS، JavaScript، Bootstrap، Tailwind و React (در حال یادگیری)</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/images/web-shop.jpg" alt="Web Shop">
-          <p>طراحی فروشگاه واکنش‌گرا</p>
+    <div class="portfolio-category">
+      <h3>سایت‌هایی که طراحی کرده‌ام</h3>
+      <div class="site-preview">
+        <div class="card">
+          <img src="images/site1.jpg" alt="Site 1">
+          <p>سایت فروشگاهی مدرن</p>
         </div>
-        <div class="project-card">
-          <img src="assets/images/web-landing.jpg" alt="Landing Page">
-          <p>صفحه فرود تبلیغاتی</p>
+        <div class="card">
+          <img src="images/site2.jpg" alt="Site 2">
+          <p>وبسایت رزومه شخصی</p>
         </div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <h3>برنامه‌نویسی موبایل</h3>
-      <p>Flutter و React Native برای ساخت اپلیکیشن‌های اندروید و iOS</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/images/flutter-app.jpg" alt="Flutter App">
-          <p>اپلیکیشن سفارش غذا با Flutter</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <h3>وردپرس و سئو</h3>
-      <p>ساخت سایت با WordPress و بهینه‌سازی برای موتورهای جستجو (SEO)</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/images/wordpress-seo.jpg" alt="WordPress SEO">
-          <p>وب‌سایت خبری با وردپرس و سئوی کامل</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <h3>ادیت ویدیو</h3>
-      <p>مهارت در تدوین ویدیوهای تبلیغاتی و آموزشی با Premiere و CapCut</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/images/video-edit.jpg" alt="Video Edit">
-          <p>ویدیوی تبلیغاتی کمپین شبکه اجتماعی</p>
+        <div class="card">
+          <img src="images/site3.jpg" alt="Site 3">
+          <p>پنل مدیریتی ساده</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2>تماس با من</h2>
-    <p><i class="fas fa-envelope"></i> fake.email@example.com</p>
-    <p><i class="fas fa-phone"></i> 0912-000-0000</p>
+  <!-- سوابق -->
+  <section id="experience" class="skills">
+    <h2>سوابق شغلی</h2>
+    <div class="experience">
+      <div class="experience-item">طراح سایت در شرکت X - سال 1402</div>
+      <div class="experience-item">کارآموزی در تیم UI/UX دانشگاه - سال 1401</div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 نرگس شکوهی‌دوست</p>
-  </footer>
+  <!-- تحصیلات -->
+  <section class="education skills">
+    <h2>تحصیلات</h2>
+    <p>دانشجوی کارشناسی نرم‌افزار دانشگاه آزاد</p>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- در حال یادگیری -->
+  <section class="learning skills">
+    <h2>در حال یادگیری</h2>
+    <p>یادگیری TypeScript، Next.js و بهبود طراحی UI حرفه‌ای</p>
+  </section>
+
+  <!-- رزومه PDF -->
+  <section class="resume-download skills">
+    <a href="resume.pdf" download>دانلود رزومه PDF</a>
+  </section>
+
+  <!-- راه‌های ارتباطی -->
+  <section id="contact" class="contact">
+    <h2>راه‌های ارتباطی</h2>
+    <p>ایمیل: example@email.com</p>
+    <p>شماره تماس: ۰۹۱۲۱۲۳۴۵۶۷</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
 </body>
 </html>
