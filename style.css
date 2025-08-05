@@ -63,6 +63,7 @@ header {
   padding: 0 1rem;
 }
 
+/* درباره من */
 .about {
   display: flex;
   gap: 2rem;
@@ -88,88 +89,93 @@ header {
   margin-bottom: 1rem;
 }
 
-.skills ul {
-  list-style: square;
-  padding-right: 1.5rem;
-}
-
-.skills li {
-  margin-bottom: 10px;
+.about-text p {
   font-size: 1.1rem;
+  max-width: 600px;
 }
 
-/* نمونه‌کارها */
-.projects .slider {
-  position: relative;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 300px;
-  margin-right: 15px;
-  background-color: #222;
-  padding: 1rem;
-  border-radius: 10px;
+/* مهارت‌ها */
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #e88ae3;
   text-align: center;
-  box-shadow: 0 0 10px #e88ae361;
 }
 
-.slide img {
+/* تک مهارت و نمونه‌کارها */
+.skill {
+  margin-bottom: 3rem;
+}
+
+.skill h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #f0a1f7;
+}
+
+.skill p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* کارت نمونه‌کار */
+.projects {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.project-card {
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #e88ae350;
+  padding: 0.5rem;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.project-card img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
-.slide p {
+.project-card p {
   color: #eee;
   font-size: 1rem;
 }
 
-/* دکمه‌های اسلایدر */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #e88ae3;
-  border: none;
-  padding: 0.6rem 1rem;
-  color: #121212;
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 0.9;
-  user-select: none;
-}
-
-.prev:hover, .next:hover {
-  opacity: 1;
-}
-
-.prev {
-  left: 5px;
-}
-
-.next {
-  right: 5px;
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #e88ae3;
 }
 
 /* تماس */
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #e88ae3;
+  text-align: center;
+}
+
 .contact p {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: #ddd;
 }
 
 .contact i {
   color: #e88ae3;
-  margin-left: 10px;
 }
 
 /* فوتر */
@@ -179,6 +185,7 @@ footer {
   color: #555;
   border-top: 1px solid #222;
   margin-top: 4rem;
+  font-size: 0.9rem;
 }
 
 /* ریسپانسیو */
@@ -192,13 +199,25 @@ footer {
     margin-bottom: 1.5rem;
   }
 
-  .slides {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+  .projects {
+    justify-content: center;
   }
 
-  .slide {
-    min-width: 80vw;
-    margin-right: 10px;
+  .project-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .skill h3 {
+    font-size: 1.3rem;
   }
 }
