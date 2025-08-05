@@ -1,121 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رزومه من</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزومه نرگس شکوهی‌دوست</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- منو -->
-  <header>
-    <nav>
-      <div class="logo">رزومه من</div>
+  <header class="header">
+    <nav class="navbar">
       <ul>
         <li><a href="#about">درباره من</a></li>
         <li><a href="#skills">مهارت‌ها</a></li>
         <li><a href="#portfolio">نمونه‌کارها</a></li>
         <li><a href="#experience">سوابق</a></li>
-        <li><a href="#contact">ارتباط</a></li>
+        <li><a href="#education">تحصیلات</a></li>
+        <li><a href="#contact">تماس با من</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- درباره من -->
-  <section id="about">
+  <section id="about" class="section">
     <div class="about-container">
+      <img src="https://via.placeholder.com/200" alt="عکس نرگس" class="profile-img">
       <div class="about-text">
-        <h2>درباره من</h2>
-        <p>من یک طراح و توسعه‌دهنده فرانت‌اند هستم با علاقه به ساخت رابط‌های کاربری زیبا، واکنش‌گرا و تجربه کاربری حرفه‌ای.</p>
-      </div>
-      <div class="about-image">
-        <img src="images/avatar.jpg" alt="تصویر من" />
+        <h1>نرگس شکوهی‌دوست</h1>
+        <p>طراح رابط کاربری، توسعه‌دهنده فرانت‌اند و گرافیست حرفه‌ای با سابقه همکاری در پروژه‌های بین‌المللی.</p>
       </div>
     </div>
   </section>
 
-  <!-- مهارت‌ها -->
-  <section id="skills" class="skills">
+  <div class="divider"></div>
+
+  <section id="skills" class="section center-text">
     <h2>مهارت‌ها</h2>
-    <div class="item">HTML</div>
-    <div class="item">CSS</div>
-    <div class="item">JavaScript</div>
-    <div class="item">React</div>
-    <div class="item">Figma</div>
-    <div class="item">Git</div>
+    <ul class="skills-list">
+      <li><i class="fa-solid fa-code"></i> HTML, CSS, JS, Flutter</li>
+      <li><i class="fa-solid fa-paintbrush"></i> Photoshop, Illustrator, Figma, Canva</li>
+      <li><i class="fa-solid fa-computer"></i> ICDL و مهارت‌های شرکتی</li>
+    </ul>
   </section>
 
-  <!-- نمونه‌کارها -->
-  <section id="portfolio" class="skills">
+  <div class="divider"></div>
+
+  <section id="portfolio" class="section">
     <h2>نمونه‌کارها</h2>
-
     <div class="portfolio-category">
-      <h3>طراحی رابط کاربری</h3>
-      <div class="slider">
-        <img src="images/ui1.jpg" alt="UI Design 1">
-        <img src="images/ui2.jpg" alt="UI Design 2">
-        <img src="images/ui3.jpg" alt="UI Design 3">
-      </div>
+      <h3>طراحی گرافیک</h3>
+      <ul>
+        <li>نمونه لوگو - <img src="https://via.placeholder.com/150" alt="لوگو"></li>
+        <li>نمونه بنر - <img src="https://via.placeholder.com/150" alt="بنر"></li>
+      </ul>
     </div>
-
     <div class="portfolio-category">
-      <h3>سایت‌هایی که طراحی کرده‌ام</h3>
+      <h3>طراحی سایت</h3>
       <div class="site-preview">
-        <div class="card">
-          <img src="images/site1.jpg" alt="Site 1">
-          <p>سایت فروشگاهی مدرن</p>
-        </div>
-        <div class="card">
-          <img src="images/site2.jpg" alt="Site 2">
-          <p>وبسایت رزومه شخصی</p>
-        </div>
-        <div class="card">
-          <img src="images/site3.jpg" alt="Site 3">
-          <p>پنل مدیریتی ساده</p>
-        </div>
+        <img src="https://via.placeholder.com/250x150" alt="پیش‌نمایش سایت">
+        <a href="#" target="_blank">مشاهده سایت</a>
       </div>
     </div>
   </section>
 
-  <!-- سوابق -->
-  <section id="experience" class="skills">
+  <div class="divider"></div>
+
+  <section id="experience" class="section center-text">
     <h2>سوابق شغلی</h2>
-    <div class="experience">
-      <div class="experience-item">طراح سایت در شرکت X - سال 1402</div>
-      <div class="experience-item">کارآموزی در تیم UI/UX دانشگاه - سال 1401</div>
-    </div>
+    <ul>
+      <li>طراح رابط کاربری در شرکت X - ۱۴۰۲ تا ۱۴۰۳</li>
+      <li>گرافیست در استودیو طراحی Y - ۱۴۰۱ تا ۱۴۰۲</li>
+      <li><strong>در حال حاضر مشغول به فعالیت فریلنسری</strong></li>
+    </ul>
   </section>
 
-  <!-- تحصیلات -->
-  <section class="education skills">
+  <div class="divider"></div>
+
+  <section id="education" class="section center-text">
     <h2>تحصیلات</h2>
-    <p>دانشجوی کارشناسی نرم‌افزار دانشگاه آزاد</p>
+    <p>کارشناسی نرم‌افزار، دانشگاه آزاد اسلامی</p>
+    <p>در حال یادگیری: React, UI Motion Design, Next.js</p>
   </section>
 
-  <!-- در حال یادگیری -->
-  <section class="learning skills">
-    <h2>در حال یادگیری</h2>
-    <p>یادگیری TypeScript، Next.js و بهبود طراحی UI حرفه‌ای</p>
-  </section>
+  <div class="divider"></div>
 
-  <!-- رزومه PDF -->
-  <section class="resume-download skills">
-    <a href="resume.pdf" download>دانلود رزومه PDF</a>
-  </section>
-
-  <!-- راه‌های ارتباطی -->
-  <section id="contact" class="contact">
-    <h2>راه‌های ارتباطی</h2>
+  <section id="contact" class="section center-text">
+    <h2>تماس با من</h2>
     <p>ایمیل: example@email.com</p>
-    <p>شماره تماس: ۰۹۱۲۱۲۳۴۵۶۷</p>
+    <p>تلفن: ۰۹۱۲۱۲۳۴۵۶۷</p>
+    <p>دانلود رزومه PDF: <a href="#">دانلود فایل</a></p>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-github"></i>
     </div>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
