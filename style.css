@@ -63,14 +63,14 @@ header {
   padding: 0 1rem;
 }
 
-/* بخش درباره من */
+/* درباره من */
 .about {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
+
 
 .profile-pic-container img {
   border-radius: 12px;
@@ -89,73 +89,61 @@ header {
   margin-bottom: 1rem;
 }
 
-/* از اینجا به بعد وسط‌چین */
-.skills, .projects, .contact {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about-text p {
+  font-size: 1.1rem;
+  max-width: 600px;
 }
 
 /* مهارت‌ها */
 .skills h2 {
+  font-size: 2rem;
   margin-bottom: 2rem;
+  color: #e88ae3;
+  text-align: center;
 }
 
-.skills ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 2rem auto;
-  display: inline-block;
-  text-align: right; /* راست‌چین متن فارسی در لیست */
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
+/* تک مهارت و نمونه‌کارها */
 .skill {
   margin-bottom: 3rem;
-  max-width: 700px;
 }
 
 .skill h3 {
-  margin-bottom: 0.6rem;
-  font-size: 1.5rem;
-  color: #e88ae3;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #f0a1f7;
 }
 
 .skill p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   color: #ccc;
 }
 
-/* نمونه‌کارهای هر مهارت */
-.skill .projects {
+/* کارت نمونه‌کار */
+.projects {
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: start;
 }
 
 .project-card {
-  max-width: 250px;
   background-color: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #e88ae361;
-  text-align: center;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #e88ae350;
+  padding: 0.5rem;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
+  text-align: center;
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .project-card p {
@@ -163,57 +151,31 @@ header {
   font-size: 1rem;
 }
 
-/* اسلایدر نمونه‌کارها (در صورت استفاده) */
-.projects .slider {
-  position: relative;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto 3rem auto;
-}
-
-/* دکمه‌های اسلایدر */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #e88ae3;
-  border: none;
-  padding: 0.6rem 1rem;
-  color: #121212;
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 0.9;
-  user-select: none;
-  z-index: 10;
-}
-
-.prev:hover, .next:hover {
-  opacity: 1;
-}
-
-.prev {
-  left: 5px;
-}
-
-.next {
-  right: 5px;
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #e88ae3;
 }
 
 /* تماس */
 .contact h2 {
+  font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: #e88ae3;
+  text-align: center;
 }
 
 .contact p {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: #ddd;
 }
 
 .contact i {
   color: #e88ae3;
-  margin-left: 10px;
 }
 
 /* فوتر */
@@ -223,6 +185,7 @@ footer {
   color: #555;
   border-top: 1px solid #222;
   margin-top: 4rem;
+  font-size: 0.9rem;
 }
 
 /* ریسپانسیو */
@@ -236,16 +199,25 @@ footer {
     margin-bottom: 1.5rem;
   }
 
-  .skill .projects {
-    flex-direction: column;
-    align-items: center;
+  .projects {
+    justify-content: center;
   }
 
   .project-card {
-    max-width: 90vw;
+    width: 90%;
+    max-width: 350px;
   }
 
-  .projects .slider {
-    max-width: 100%;
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .skill h3 {
+    font-size: 1.3rem;
   }
 }
